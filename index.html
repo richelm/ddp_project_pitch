@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expoloring Linear Models with MTCARS Dataset</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Expoloring Linear Models with MTCARS Dataset">
+  <meta name="author" content="Shawn Rich">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Expoloring Linear Models with MTCARS Dataset</h1>
+    <h2></h2>
+    <p>Shawn Rich<br/>Data Analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Understanding linear models can be difficult. This shiny application is designed to help students learning linear models. Through the application interface, students interactively explore building and analyzing a linear model using the mtcars dataset. </p>
+
+<p>Key features of the application:</p>
+
+<ol>
+<li>Variable transmission (am) is inlcuded in all models.</li>
+<li>Checkbox inputs allow students to select additional variables from the dataset for their models.</li>
+<li>Model summary and plots are generate for student review.</li>
+<li>Help tab provides additional application information and explanation of mtcars dataset.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why Include Transmission Type in All Models?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Is there a difference in mean mpg for automatic and manual transmissions? A t-test shows that a null hypothesis of means being equal should be rejected.</p>
+
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  mpg.auto and mpg.manual
+## t = -3.7671, df = 18.332, p-value = 0.001374
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -11.280194  -3.209684
+## sample estimates:
+## mean of x mean of y 
+##  17.14737  24.39231
+</code></pre>
+
+<p>We include <em>am</em> variable in all models and let the user of the application explore the other variables to determine which also predict miles per gallon.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Intended Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application is designed to supplement an introductory course in regression models. It is assumed the course would cover the following topics:</p>
+
+<ul>
+<li>t Confidence intervals</li>
+<li>Hypothesis testing</li>
+<li>Ordinary least squares</li>
+<li>Regression to the mean</li>
+<li>Statistical linear regression models</li>
+<li>Residuals</li>
+<li>Plots of linear models</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Going Further</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The application is is licensed under the terms of the MIT license. Expand the features for the mtcars dataset or add additional datasets for your students. Fork or clone from the following github repo:</p>
+
+<p><a href="https://github.com/richelm/ddp">https://github.com/richelm/ddp</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Why Include Transmission Type in All Models?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Intended Use'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Going Further'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
