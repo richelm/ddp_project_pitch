@@ -1,0 +1,27 @@
+# compiled source
+# ---------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+#
+# backup files
+# ------------
+*.bak
+*.*!
+*.*~
+#
+# generated files
+# ---------------
+*.pdf
+.Rhistory
+#
+# directories
+# -----------
+build/
+dist/
+docs/
+web/data/
+.cache/

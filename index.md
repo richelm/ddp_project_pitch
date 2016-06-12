@@ -1,5 +1,5 @@
 ---
-title       : Expoloring Linear Models with MTCARS Dataset
+title       : Exploring Linear Models with MTCARS Dataset
 subtitle    : 
 author      : Shawn Rich
 job         : Data Analyst
